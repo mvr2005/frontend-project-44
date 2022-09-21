@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name?: ');
-console.log('Hello, ' + name + '!\nAnswer "yes" if the number is even, otherwise answer "no".');
+import {greeting} from '../src/index.js';
+greeting();
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
 for (let i = 1; i <= 3; i += 1){
     let number = Math.random() * 100;
         number = Math.floor(number);
