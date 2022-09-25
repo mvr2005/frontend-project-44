@@ -25,21 +25,19 @@ const implementationGame = () => {
     switch (operation) {
       case '+':
         result = digit1 + digit2;
-        result = String(result);
         actualValue = `${digit1}${'+'}${digit2}`;
         break;
       case '-':
         result = digit1 - digit2;
-        result = String(result);
         actualValue = `${digit1}${'-'}${digit2}`;
         break;
       case '*':
         result = digit1 * digit2;
-        result = String(result);
         actualValue = `${digit1}${'*'}${digit2}`;
         break;
         // no default
     }
+    result = String(result);
     array[i] = actualValue;
     array[i + 1] = result;
   }
