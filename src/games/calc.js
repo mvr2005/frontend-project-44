@@ -17,11 +17,9 @@ const selectOperanion = () => {
 const implementationGame = () => {
   const array = [];
   for (let i = 0; i < 6; i += 2) {
-    const digit1 = selectNumber();
-    const digit2 = selectNumber();
+    const digit1 = selectNumber(); const digit2 = selectNumber();
     const operation = selectOperanion();
-    let actualValue = '';
-    let result = 0;
+    let actualValue = ''; let result = 0;
     switch (operation) {
       case '+':
         result = digit1 + digit2;
