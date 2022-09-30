@@ -25,7 +25,7 @@ const implementationGame = () => {
     }
     const minString = String(arrMinMax[0]);
     const maxString = String(arrMinMax[1]);
-    const minMaxString = `${minString}${' '}${maxString}`;
+    const minMaxString = `${minString} ${maxString}`;
     array[i] = minMaxString;
     array[i + 1] = String(divisor);
   }
