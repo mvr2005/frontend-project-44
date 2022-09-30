@@ -20,7 +20,6 @@ const progressionString = (arr) => {
 const implementationGame = () => {
   const array = [];
   let digit = 0;
-  // let progressionSring = '';
   for (let i = 0; i < 6; i += 2) {
     const stepProgession = selectDigit();
     const passPlace = selectDigit();
