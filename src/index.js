@@ -17,6 +17,6 @@ export const startGame = (text, array) => {
 };
 
 export const selectNumber = () => {
-  const number = Math.floor(Math.random() * 100);
+  const number = Math.floor(Math.random() * 100 + 1);
   return number;
 };
