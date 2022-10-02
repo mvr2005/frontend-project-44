@@ -16,7 +16,7 @@ const implementationGame = () => {
   return array;
 };
 
-const text = 'Answer "yes" if the number is even, otherwise answer "no".';
+const text = 'Answer "yes" if number even, otherwise answer "no".';
 const array = implementationGame();
 
 export { text, array };
