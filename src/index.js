@@ -22,7 +22,7 @@ export const startGame = (text, array) => {
 };
 
 export const selectNumber = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
+  const mini = Math.ceil(min);
+  const maxi = Math.floor(max);
+  return Math.floor(Math.random() * (maxi - mini)) + mini;
 };
