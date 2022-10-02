@@ -22,7 +22,7 @@ const implementationGame = () => {
     }
     digit = String(arrProgression[passPlace]);
     arrProgression[passPlace] = '..';
-    array[i] = progressionString(arrProgression);
+    array[i] = progressionString(arrProgression).trim();
     array[i + 1] = digit;
   }
   return array;
