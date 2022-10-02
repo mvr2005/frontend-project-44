@@ -14,7 +14,6 @@ const implementationGame = () => {
     array[i] = actualValue;
     array[i + 1] = value;
   }
-  console.log(array);
   return array;
 };
 
