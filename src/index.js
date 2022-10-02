@@ -12,7 +12,7 @@ export const startGame = (text, array) => {
       console.log('Correct!');
       numberCorrectAnswers += 1;
       if (numberCorrectAnswers === 3) {
-        console.log(`${'Congratulations,'} ${name}`);
+        console.log(`${'Congratulations,'} ${name}!`);
       }
     } else {
       console.log(`${"'"}${currentValue}${"'"}${"is wrong answer ;(. Correct answer was '"}${array[i + 1]}${"'.\nLet's try again, "}${name}${'!'}`);
