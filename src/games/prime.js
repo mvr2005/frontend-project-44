@@ -17,7 +17,7 @@ const implementationGame = () => {
   return array;
 };
 
-const text = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const text = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 const array = implementationGame();
 
 export { text, array };
