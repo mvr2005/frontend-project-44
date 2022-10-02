@@ -23,15 +23,15 @@ const implementationGame = () => {
     switch (operation) {
       case '+':
         result = digit1 + digit2;
-        actualValue = `${digit1}${'+'}${digit2}`;
+        actualValue = `${digit1} ${'+'} ${digit2}`;
         break;
       case '-':
         result = digit1 - digit2;
-        actualValue = `${digit1}${'-'}${digit2}`;
+        actualValue = `${digit1} ${'-'} ${digit2}`;
         break;
       case '*':
         result = digit1 * digit2;
-        actualValue = `${digit1}${'*'}${digit2}`;
+        actualValue = `${digit1} ${'*'} ${digit2}`;
         break;
         // no default
     }
