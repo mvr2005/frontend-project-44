@@ -3,7 +3,7 @@ import { selectNumber } from '../index.js';
 const selectOperanion = () => {
   const operation = ['+', '-', '*'];
   let selectedOperator = '';
-  const digit = selectNumber();
+  const digit = selectNumber(1, 100);
   if (digit <= 33) {
     selectedOperator = operation[0];
   } else if (digit > 66) {
@@ -17,7 +17,7 @@ const selectOperanion = () => {
 const implementationGame = () => {
   const array = [];
   for (let i = 0; i < 6; i += 2) {
-    const digit1 = selectNumber(); const digit2 = selectNumber();
+    const digit1 = selectNumber(1, 100); const digit2 = selectNumber(1, 100);
     const operation = selectOperanion();
     let actualValue = ''; let result = 0;
     switch (operation) {

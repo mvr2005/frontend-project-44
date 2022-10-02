@@ -1,13 +1,5 @@
 import { selectNumber } from '../index.js';
 
-const selectDigit = () => {
-  let digit = selectNumber();
-  if (digit >= 10) {
-    digit = Math.floor(digit * 0.1);
-  }
-  return digit;
-};
-
 const progressionString = (arr) => {
   let progressionStrings = '';
   for (let i = 0; i < arr.length; i += 1) {
@@ -21,9 +13,9 @@ const implementationGame = () => {
   const array = [];
   let digit = 0;
   for (let i = 0; i < 6; i += 2) {
-    const stepProgession = selectDigit();
-    const passPlace = selectDigit();
-    const startProgression = selectNumber();
+    const stepProgession = selectNumber(1, 20);
+    const passPlace = selectNumber(1, 10);
+    const startProgression = selectNumber(1, 20);
     const arrProgression = [startProgression];
     for (let j = 0; j < 9; j += 1) {
       arrProgression.push(arrProgression[j] + stepProgession);

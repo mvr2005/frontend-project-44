@@ -16,7 +16,8 @@ export const startGame = (text, array) => {
   }
 };
 
-export const selectNumber = () => {
-  const number = Math.floor(Math.random() * 100 + 1);
-  return number;
+export const selectNumber = (min, max) => {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
 };

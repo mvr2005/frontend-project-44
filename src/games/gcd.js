@@ -16,7 +16,7 @@ const implementationGame = () => {
   const array = [];
   let divisor = 0;
   for (let i = 0; i < 6; i += 2) {
-    const arrMinMax = calcMinMax(selectNumber(), selectNumber());
+    const arrMinMax = calcMinMax(selectNumber(1, 100), selectNumber(1, 100));
     for (let j = arrMinMax[0]; j > 0; j -= 1) {
       if ((arrMinMax[0] % j) === 0 && (arrMinMax[1] % j) === 0) {
         divisor = j;
