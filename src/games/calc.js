@@ -1,15 +1,15 @@
 import { selectNumber } from '../index.js';
 
 const selectOperanion = () => {
-  const operation = ['+', '-', '*'];
+  const [plus, minus, multiply] = ['+', '-', '*'];
   let selectedOperator = '';
   const digit = selectNumber(1, 100);
   if (digit <= 33) {
-    selectedOperator = operation[0];
+    selectedOperator = plus;
   } else if (digit > 66) {
-    selectedOperator = operation[1];
+    selectedOperator = minus;
   } else {
-    selectedOperator = operation[2];
+    selectedOperator = multiply;
   }
   return selectedOperator;
 };
