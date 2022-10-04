@@ -18,7 +18,7 @@ const implementationGame = () => {
 };
 
 const startGamePrime = () => {
-  const text = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+  const text = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const array = implementationGame();
   startGame(text, array);
 };
