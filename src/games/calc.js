@@ -22,7 +22,7 @@ const selectOperanion = () => {
 
 const implementationGame = () => {
   const array = [];
-  for (let i = 0; i < 6; i += 2) {
+  for (let i = 0; i < 3; i += 1) {
     const digit1 = generateRandomNumber(1, 100); const digit2 = generateRandomNumber(1, 100);
     const operation = selectOperanion();
     let actualValue = ''; let result = 0;
@@ -42,8 +42,7 @@ const implementationGame = () => {
         // no default
     }
     result = String(result);
-    array[i] = actualValue;
-    array[i + 1] = result;
+    array[i] = [actualValue, result];
   }
   return array;
 };

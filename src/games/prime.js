@@ -3,7 +3,7 @@ import generateRandomNumber from '../generateRandomNumber.js';
 
 const implementationGame = () => {
   const array = [];
-  for (let i = 0; i < 6; i += 2) {
+  for (let i = 0; i < 3; i += 1) {
     let value = 'yes';
     const actualValue = generateRandomNumber(2, 100);
     for (let j = 2; j < actualValue; j += 1) {
@@ -12,8 +12,7 @@ const implementationGame = () => {
         break;
       }
     }
-    array[i] = actualValue;
-    array[i + 1] = value;
+    array[i] = [actualValue, value];
   }
   return array;
 };

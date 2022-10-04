@@ -13,7 +13,7 @@ const progressionString = (arr) => {
 const implementationGame = () => {
   const array = [];
   let digit = 0;
-  for (let i = 0; i < 6; i += 2) {
+  for (let i = 0; i < 3; i += 1) {
     const stepProgession = generateRandomNumber(1, 20);
     const passPlace = generateRandomNumber(1, 10);
     const startProgression = generateRandomNumber(1, 20);
@@ -23,8 +23,7 @@ const implementationGame = () => {
     }
     digit = String(arrProgression[passPlace]);
     arrProgression[passPlace] = '..';
-    array[i] = progressionString(arrProgression).trim();
-    array[i + 1] = digit;
+    array[i] = [progressionString(arrProgression).trim(), digit];
   }
   return array;
 };

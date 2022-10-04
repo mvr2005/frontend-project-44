@@ -16,7 +16,7 @@ const calcMinMax = (dig1, dig2) => {
 const implementationGame = () => {
   const array = [];
   let divisor = 0;
-  for (let i = 0; i < 6; i += 2) {
+  for (let i = 0; i < 3; i += 1) {
     const arrMinMax = calcMinMax(generateRandomNumber(1, 100), generateRandomNumber(1, 100));
     for (let j = arrMinMax[0]; j > 0; j -= 1) {
       if ((arrMinMax[0] % j) === 0 && (arrMinMax[1] % j) === 0) {
@@ -27,8 +27,7 @@ const implementationGame = () => {
     const minString = String(arrMinMax[0]);
     const maxString = String(arrMinMax[1]);
     const minMaxString = `${minString} ${maxString}`;
-    array[i] = minMaxString;
-    array[i + 1] = String(divisor);
+    array[i] = [minMaxString, String(divisor)];
   }
   return array;
 };
