@@ -1,4 +1,4 @@
-import { selectNumber } from '../index.js';
+import { selectNumber, startGame } from '../index.js';
 
 const implementationGame = () => {
   const array = [];
@@ -16,7 +16,10 @@ const implementationGame = () => {
   return array;
 };
 
-const text = "Answer 'yes' if number even otherwise answer 'no'.";
-const array = implementationGame();
+const startGameEven = () => {
+  const text = "Answer 'yes' if number even otherwise answer 'no'.";
+  const array = implementationGame();
+  startGame(text, array);
+};
 
-export { text, array };
+export default startGameEven;

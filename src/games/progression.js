@@ -1,4 +1,4 @@
-import { selectNumber } from '../index.js';
+import { selectNumber, startGame } from '../index.js';
 
 const progressionString = (arr) => {
   let progressionStrings = '';
@@ -28,7 +28,10 @@ const implementationGame = () => {
   return array;
 };
 
-const text = 'What number is missing in the progression?';
-const array = implementationGame();
+const startGameProgression = () => {
+  const text = 'What number is missing in the progression?';
+  const array = implementationGame();
+  startGame(text, array);
+};
 
-export { text, array };
+export default startGameProgression;

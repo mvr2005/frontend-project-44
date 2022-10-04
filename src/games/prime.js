@@ -1,4 +1,4 @@
-import { selectNumber } from '../index.js';
+import { selectNumber, startGame } from '../index.js';
 
 const implementationGame = () => {
   const array = [];
@@ -17,7 +17,10 @@ const implementationGame = () => {
   return array;
 };
 
-const text = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-const array = implementationGame();
+const startGamePrime = () => {
+  const text = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+  const array = implementationGame();
+  startGame(text, array);
+};
 
-export { text, array };
+export default startGamePrime;

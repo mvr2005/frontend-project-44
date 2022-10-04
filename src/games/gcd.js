@@ -1,4 +1,4 @@
-import { selectNumber } from '../index.js';
+import { selectNumber, startGame } from '../index.js';
 
 const calcMinMax = (dig1, dig2) => {
   const arrMinMax = [];
@@ -32,7 +32,10 @@ const implementationGame = () => {
   return array;
 };
 
-const text = 'Find the greatest common divisor of given numbers.';
-const array = implementationGame();
+const startGameGcd = () => {
+  const text = 'Find the greatest common divisor of given numbers.';
+  const array = implementationGame();
+  startGame(text, array);
+};
 
-export { text, array };
+export default startGameGcd;

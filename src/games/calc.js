@@ -1,4 +1,4 @@
-import { selectNumber } from '../index.js';
+import { selectNumber, startGame } from '../index.js';
 
 const selectOperanion = () => {
   const [plus, minus, multiply] = ['+', '-', '*'];
@@ -42,7 +42,10 @@ const implementationGame = () => {
   return array;
 };
 
-const text = 'What is the result of the expression?';
-const array = implementationGame();
+const startGameCalc = () => {
+  const text = 'What is the result of the expression?';
+  const array = implementationGame();
+  startGame(text, array);
+};
 
-export { text, array };
+export default startGameCalc;
