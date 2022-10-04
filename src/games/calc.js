@@ -3,13 +3,18 @@ import { selectNumber, startGame } from '../index.js';
 const selectOperanion = () => {
   const [plus, minus, multiply] = ['+', '-', '*'];
   let selectedOperator = '';
-  const digit = selectNumber(1, 100);
-  if (digit <= 33) {
-    selectedOperator = plus;
-  } else if (digit > 66) {
-    selectedOperator = minus;
-  } else {
-    selectedOperator = multiply;
+  const digit = selectNumber(1, 4);
+  switch (digit) {
+    case 1:
+      selectedOperator = plus;
+      break;
+    case 2:
+      selectedOperator = minus;
+      break;
+    case 3:
+      selectedOperator = multiply;
+      break;
+          // no default
   }
   return selectedOperator;
 };
