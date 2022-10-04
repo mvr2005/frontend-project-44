@@ -17,7 +17,7 @@ const implementationGame = () => {
 };
 
 const startGameEven = () => {
-  const text = 'Answer "yes" if number even otherwise answer "no".';
+  const text = 'Answer "yes" if number is even, otherwise answer "no".';
   const array = implementationGame();
   startGame(text, array);
 };
