@@ -1,10 +1,11 @@
-import { selectNumber, startGame } from '../index.js';
+import startGame from '../index.js';
+import generateRandomNumber from '../generateRandomNumber.js';
 
 const implementationGame = () => {
   const array = [];
   for (let i = 0; i < 6; i += 2) {
     let value = 'yes';
-    const actualValue = selectNumber(1, 100);
+    const actualValue = generateRandomNumber(1, 100);
     for (let j = 2; j < actualValue; j += 1) {
       if (actualValue % j === 0) {
         value = 'no';

@@ -1,9 +1,10 @@
-import { selectNumber, startGame } from '../index.js';
+import startGame from '../index.js';
+import generateRandomNumber from '../generateRandomNumber.js';
 
 const selectOperanion = () => {
   const [plus, minus, multiply] = ['+', '-', '*'];
   let selectedOperator = '';
-  const digit = selectNumber(1, 4);
+  const digit = generateRandomNumber(1, 4);
   switch (digit) {
     case 1:
       selectedOperator = plus;
@@ -22,7 +23,7 @@ const selectOperanion = () => {
 const implementationGame = () => {
   const array = [];
   for (let i = 0; i < 6; i += 2) {
-    const digit1 = selectNumber(1, 100); const digit2 = selectNumber(1, 100);
+    const digit1 = generateRandomNumber(1, 100); const digit2 = generateRandomNumber(1, 100);
     const operation = selectOperanion();
     let actualValue = ''; let result = 0;
     switch (operation) {

@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const startGame = (text, array) => {
+const startGame = (text, array) => {
   console.log(`${'Welcome to the Brain Games!'}`);
   const name = readlineSync.question('May I have your name?: ');
   console.log(`${'Hello, '}${name}${'!'}`);
@@ -21,8 +21,4 @@ export const startGame = (text, array) => {
   }
 };
 
-export const selectNumber = (min, max) => {
-  const mini = min;
-  const maxi = max;
-  return Math.floor(Math.random() * (maxi - mini)) + mini;
-};
+export default startGame;
