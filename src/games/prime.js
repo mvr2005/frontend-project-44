@@ -2,7 +2,7 @@ import startGame from '../index.js';
 import generateRandomNumber from '../generateRandomNumber.js';
 
 const implementationGame = () => {
-  const array = [];
+  const arrayTaskSolution = [];
   for (let i = 0; i < 3; i += 1) {
     let value = 'yes';
     const actualValue = generateRandomNumber(2, 100);
@@ -12,15 +12,15 @@ const implementationGame = () => {
         break;
       }
     }
-    array[i] = [actualValue, value];
+    arrayTaskSolution[i] = [actualValue, value];
   }
-  return array;
+  return arrayTaskSolution;
 };
 
 const startGamePrime = () => {
-  const text = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const array = implementationGame();
-  startGame(text, array);
+  const textTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  const arrayTaskSolution = implementationGame();
+  startGame(textTask, arrayTaskSolution);
 };
 
 export default startGamePrime;

@@ -21,7 +21,7 @@ const selectOperanion = () => {
 };
 
 const implementationGame = () => {
-  const array = [];
+  const arrayTaskSolution = [];
   for (let i = 0; i < 3; i += 1) {
     const digit1 = generateRandomNumber(1, 100); const digit2 = generateRandomNumber(1, 100);
     const operation = selectOperanion();
@@ -42,15 +42,15 @@ const implementationGame = () => {
         // no default
     }
     result = String(result);
-    array[i] = [actualValue, result];
+    arrayTaskSolution[i] = [actualValue, result];
   }
-  return array;
+  return arrayTaskSolution;
 };
 
 const startGameCalc = () => {
-  const text = 'What is the result of the expression?';
-  const array = implementationGame();
-  startGame(text, array);
+  const textTask = 'What is the result of the expression?';
+  const arrayTaskSolution = implementationGame();
+  startGame(textTask, arrayTaskSolution);
 };
 
 export default startGameCalc;

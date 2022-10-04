@@ -14,7 +14,7 @@ const calcMinMax = (dig1, dig2) => {
 };
 
 const implementationGame = () => {
-  const array = [];
+  const arrayTaskSolution = [];
   let divisor = 0;
   for (let i = 0; i < 3; i += 1) {
     const arrMinMax = calcMinMax(generateRandomNumber(1, 100), generateRandomNumber(1, 100));
@@ -27,15 +27,15 @@ const implementationGame = () => {
     const minString = String(arrMinMax[0]);
     const maxString = String(arrMinMax[1]);
     const minMaxString = `${minString} ${maxString}`;
-    array[i] = [minMaxString, String(divisor)];
+    arrayTaskSolution[i] = [minMaxString, String(divisor)];
   }
-  return array;
+  return arrayTaskSolution;
 };
 
 const startGameGcd = () => {
-  const text = 'Find the greatest common divisor of given numbers.';
-  const array = implementationGame();
-  startGame(text, array);
+  const textTask = 'Find the greatest common divisor of given numbers.';
+  const arrayTaskSolution = implementationGame();
+  startGame(textTask, arrayTaskSolution);
 };
 
 export default startGameGcd;

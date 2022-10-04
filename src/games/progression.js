@@ -11,7 +11,7 @@ const progressionString = (arr) => {
 };
 
 const implementationGame = () => {
-  const array = [];
+  const arrayTaskSolution = [];
   let digit = 0;
   for (let i = 0; i < 3; i += 1) {
     const stepProgession = generateRandomNumber(1, 20);
@@ -23,15 +23,15 @@ const implementationGame = () => {
     }
     digit = String(arrProgression[passPlace]);
     arrProgression[passPlace] = '..';
-    array[i] = [progressionString(arrProgression).trim(), digit];
+    arrayTaskSolution[i] = [progressionString(arrProgression).trim(), digit];
   }
-  return array;
+  return arrayTaskSolution;
 };
 
 const startGameProgression = () => {
-  const text = 'What number is missing in the progression?';
-  const array = implementationGame();
-  startGame(text, array);
+  const textTask = 'What number is missing in the progression?';
+  const arrayTaskSolution = implementationGame();
+  startGame(textTask, arrayTaskSolution);
 };
 
 export default startGameProgression;

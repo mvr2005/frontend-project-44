@@ -2,7 +2,7 @@ import startGame from '../index.js';
 import generateRandomNumber from '../generateRandomNumber.js';
 
 const implementationGame = () => {
-  const array = [];
+  const arrayTaskSolution = [];
   for (let i = 0; i < 3; i += 1) {
     const actualValue = generateRandomNumber(1, 100);
     let value = '';
@@ -11,15 +11,15 @@ const implementationGame = () => {
     } else {
       value = 'no';
     }
-    array[i] = [actualValue, value];
+    arrayTaskSolution[i] = [actualValue, value];
   }
-  return array;
+  return arrayTaskSolution;
 };
 
 const startGameEven = () => {
-  const text = 'Answer "yes" if the number is even, otherwise answer "no".';
-  const array = implementationGame();
-  startGame(text, array);
+  const TextTask = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const arrayTaskSolution = implementationGame();
+  startGame(TextTask, arrayTaskSolution);
 };
 
 export default startGameEven;
