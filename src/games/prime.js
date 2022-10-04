@@ -5,7 +5,7 @@ const implementationGame = () => {
   const array = [];
   for (let i = 0; i < 6; i += 2) {
     let value = 'yes';
-    const actualValue = generateRandomNumber(1, 100);
+    const actualValue = generateRandomNumber(2, 100);
     for (let j = 2; j < actualValue; j += 1) {
       if (actualValue % j === 0) {
         value = 'no';
