@@ -1,5 +1,4 @@
 ### Hexlet tests and linter status:
-[![hexlet-check](https://github.com/mvr2005/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/mvr2005/frontend-project-44/actions/workflows/hexlet-check.yml)
 [![Actions Status](https://github.com/mvr2005/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/mvr2005/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/mvr2005/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/815fe5c014825c473e84/maintainability" /></a>
 <h1>BRAIN-GAMES</h1>
