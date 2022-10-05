@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import generateRandomNumber from '../generateRandomNumber.js';
+import generateRandomNumber from '../generate-random-number.js';
 
 const calcMinMax = (dig1, dig2) => {
   const arrMinMax = [];
