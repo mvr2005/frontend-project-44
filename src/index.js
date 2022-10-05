@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
+import greeting from '../bin/brain-games.js';
+import askQuestion from './cli.js';
 
 const startGame = (textTask, arrayTaskSolution) => {
-  console.log(`${'Welcome to the Brain Games!'}`);
-  const name = readlineSync.question('May I have your name?: ');
-  console.log(`${'Hello, '}${name}${'!'}`);
+  greeting();
+  const name = askQuestion();
   console.log(textTask);
   let numberCorrectAnswers = 0;
   for (let i = 0; i < 3; i += 1) {
