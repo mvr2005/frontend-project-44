@@ -2,6 +2,10 @@
 [![Actions Status](https://github.com/mvr2005/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/mvr2005/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/mvr2005/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/815fe5c014825c473e84/maintainability" /></a>
 <h1>BRAIN-GAMES</h1>
+***Консольная игра "Игры разума"***
+***В этой игре вы сможете проверить свои математические способности***
+***Игра состоит из пяти проверочных тестов: математические вычисления(сложение, вычитание, умножение),***
+***прогрессия, общий делитель, четность, определения простого числа***
 
 ## Setup
 
