@@ -1,12 +1,5 @@
 #!/usr/bin/env node
 
-import askQuestion from '../src/cli.js';
-
-const greeting = () => {
-  console.log('Welcome to the Brain Games!');
-};
+import greeting from '../src/greeting.js';
 
 greeting();
-askQuestion();
-
-export default greeting;
