@@ -1,5 +1,6 @@
 import startGame from '../index.js';
 import generateRandomNumber from '../generate-random-number.js';
+import numberRound from '../number-round.js';
 
 const progressionString = (arr) => {
   let progressionStrings = '';
@@ -13,7 +14,7 @@ const progressionString = (arr) => {
 const implementationGame = () => {
   const arrayTaskSolution = [];
   let digit = 0;
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < numberRound(); i += 1) {
     const stepProgession = generateRandomNumber(1, 20);
     const passPlace = generateRandomNumber(1, 10);
     const startProgression = generateRandomNumber(1, 20);

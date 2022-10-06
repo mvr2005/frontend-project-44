@@ -1,5 +1,6 @@
 import startGame from '../index.js';
 import generateRandomNumber from '../generate-random-number.js';
+import numberRound from '../number-round.js';
 
 const calcMinMax = (dig1, dig2) => {
   const arrMinMax = [];
@@ -16,7 +17,7 @@ const calcMinMax = (dig1, dig2) => {
 const implementationGame = () => {
   const arrayTaskSolution = [];
   let divisor = 0;
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < numberRound(); i += 1) {
     const arrMinMax = calcMinMax(generateRandomNumber(1, 100), generateRandomNumber(1, 100));
     for (let j = arrMinMax[0]; j > 0; j -= 1) {
       if ((arrMinMax[0] % j) === 0 && (arrMinMax[1] % j) === 0) {
