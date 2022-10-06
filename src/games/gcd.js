@@ -3,14 +3,7 @@ import generateRandomNumber from '../generate-random-number.js';
 import numberRound from '../number-round.js';
 
 const calcMinMax = (dig1, dig2) => {
-  const arrMinMax = [];
-  if (dig1 <= dig2) {
-    arrMinMax[0] = dig1;
-    arrMinMax[1] = dig2;
-  } else {
-    arrMinMax[0] = dig2;
-    arrMinMax[1] = dig1;
-  }
+  const arrMinMax = [Math.min(dig1, dig2), Math.max(dig1, dig2)];
   return arrMinMax;
 };
 
