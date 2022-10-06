@@ -17,6 +17,15 @@ brain-even
 ```bash
 brain-calc
 ```
+```bash
+brain-gcd
+```
+```bash
+brain-prime
+```
+```bash
+brain-progression
+```
 
 <h2>brain-even</h2>
 <a href="https://asciinema.org/a/5GHlok7Cqd9W6IwWrlABqA6F8" target="_blank"><img src="https://asciinema.org/a/5GHlok7Cqd9W6IwWrlABqA6F8.svg" /></a>
