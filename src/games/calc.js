@@ -2,22 +2,10 @@ import { startGame, numberRound } from '../index.js';
 import generateRandomNumber from '../generate-random-number.js';
 
 const selectOperanion = () => {
-  const [plus, minus, multiply] = ['+', '-', '*'];
-  let selectedOperator = '';
-  const digit = generateRandomNumber(1, 4);
-  switch (digit) {
-    case 1:
-      selectedOperator = plus;
-      break;
-    case 2:
-      selectedOperator = minus;
-      break;
-    case 3:
-      selectedOperator = multiply;
-      break;
-          // no default
-  }
-  return selectedOperator;
+  const operators = ['+', '-', '*'];
+  const randomIndex = numberRound(0, 3);
+  const randomOperator = operators[randomIndex];
+  return randomOperator;
 };
 
 const calculation = (digit1, digit2, operation) => {
