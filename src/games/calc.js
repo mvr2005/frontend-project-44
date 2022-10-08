@@ -7,7 +7,9 @@ const selectOperation = () => {
   return randomOperator;
 };
 
+/* eslint-disable */
 const calculation = (digit1, digit2, operation) => {
+/* eslint-enable */
   switch (operation) {
     case '+':
       return digit1 + digit2;
