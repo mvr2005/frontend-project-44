@@ -1,5 +1,11 @@
 import readlineSync from 'readline-sync';
-import greeting from './greeting.js';
+import askQuestion from './greeting.js';
+
+export const greeting = () => {
+  console.log('Welcome to the Brain Games!');
+  const name = askQuestion();
+  return name;
+};
 
 export const numberRound = 3;
 
