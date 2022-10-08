@@ -1,6 +1,5 @@
-import startGame from '../index.js';
+import { startGame, numberRound } from '../index.js';
 import generateRandomNumber from '../generate-random-number.js';
-import numberRound from '../number-round.js';
 
 const selectOperanion = () => {
   const [plus, minus, multiply] = ['+', '-', '*'];
@@ -40,7 +39,7 @@ const calculation = (digit1, digit2, operation) => {
 
 const implementationGame = () => {
   const arrayTaskSolution = [];
-  for (let i = 0; i < numberRound(); i += 1) {
+  for (let i = 0; i < numberRound; i += 1) {
     const digit1 = generateRandomNumber(1, 100);
     const digit2 = generateRandomNumber(1, 100);
     const operation = selectOperanion();
