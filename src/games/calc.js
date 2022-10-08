@@ -1,28 +1,22 @@
 import { startGame, numberRound } from '../index.js';
 import generateRandomNumber from '../generate-random-number.js';
 
-const selectOperanion = () => {
+const selectOperation = () => {
   const operators = ['+', '-', '*'];
-  const randomIndex = numberRound(0, 3);
-  const randomOperator = operators[randomIndex];
+  const randomOperator = operators[generateRandomNumber(0, 3)];
   return randomOperator;
 };
 
 const calculation = (digit1, digit2, operation) => {
-  let result = 0;
   switch (operation) {
     case '+':
-      result = digit1 + digit2;
-      break;
+      return digit1 + digit2;
     case '-':
-      result = digit1 - digit2;
-      break;
+      return digit1 - digit2;
     case '*':
-      result = digit1 * digit2;
-      break;
+      return digit1 * digit2;
       // no default
   }
-  return result;
 };
 
 const implementationGame = () => {
@@ -30,7 +24,7 @@ const implementationGame = () => {
   for (let i = 0; i < numberRound; i += 1) {
     const digit1 = generateRandomNumber(1, 100);
     const digit2 = generateRandomNumber(1, 100);
-    const operation = selectOperanion();
+    const operation = selectOperation();
     const actualValue = `${digit1} ${operation} ${digit2}`;
     const result = calculation(digit1, digit2, operation);
     arrayTaskSolution[i] = [actualValue, String(result)];
