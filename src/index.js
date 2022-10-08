@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import askQuestion from './greeting.js';
+import askQuestion from './cli.js';
 
 export const greeting = () => {
   console.log('Welcome to the Brain Games!');
