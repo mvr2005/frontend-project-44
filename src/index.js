@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import askQuestion from './cli.js';
 
-export const greeting = () => {
+export const startGames = () => {
   console.log('Welcome to the Brain Games!');
   const name = askQuestion();
   return name;
@@ -10,7 +10,7 @@ export const greeting = () => {
 export const numberRound = 3;
 
 export const startGame = (textTask, arrayTaskSolution) => {
-  const name = greeting();
+  const name = startGames();
   console.log(textTask);
   let numberCorrectAnswers = 0;
   for (let i = 0; i < numberRound; i += 1) {

@@ -17,7 +17,8 @@ const calculation = (digit1, digit2, operation) => {
       return digit1 - digit2;
     case '*':
       return digit1 * digit2;
-      // no default
+    default:
+      throw new Error(`Unknown operation: '${operation}'!`);
   }
 };
 

@@ -6,11 +6,9 @@ const progressionString = (arr) => {
   return progressionStrings;
 };
 
-const stepProgession = generateRandomNumber(1, 20);
-const startProgression = generateRandomNumber(1, 20);
-
 const progression = () => {
-  const arrProgression = [startProgression];
+  const stepProgession = generateRandomNumber(1, 20);
+  const arrProgression = [generateRandomNumber(1, 20)];
   for (let j = 0; j < 9; j += 1) {
     arrProgression.push(arrProgression[j] + stepProgession);
   }
