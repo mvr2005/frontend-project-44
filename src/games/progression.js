@@ -2,7 +2,7 @@ import { startGame, numberRound } from '../index.js';
 import generateRandomNumber from '../generate-random-number.js';
 
 const progressionString = (arr) => {
-  const progressionStrings = arr.join(', ');
+  const progressionStrings = arr.join(' ');
   return progressionStrings;
 };
 
