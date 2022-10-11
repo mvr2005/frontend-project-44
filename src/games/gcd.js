@@ -6,17 +6,23 @@ const calcMinMax = (dig1, dig2) => {
   return arrMinMax;
 };
 
+const calcDivisor = (arrMinMax) => {
+  let divisor = 0;
+  for (let j = arrMinMax[0]; j > 0; j -= 1) {
+    if ((arrMinMax[0] % j) === 0 && (arrMinMax[1] % j) === 0) {
+      divisor = j;
+      break;
+    }
+  }
+  return divisor;
+};
+
 const implementationGame = () => {
   const arrayTaskSolution = [];
   let divisor = 0;
   for (let i = 0; i < numberRound; i += 1) {
     const arrMinMax = calcMinMax(generateRandomNumber(1, 100), generateRandomNumber(1, 100));
-    for (let j = arrMinMax[0]; j > 0; j -= 1) {
-      if ((arrMinMax[0] % j) === 0 && (arrMinMax[1] % j) === 0) {
-        divisor = j;
-        break;
-      }
-    }
+    divisor = calcDivisor(arrMinMax);
     const minString = String(arrMinMax[0]);
     const maxString = String(arrMinMax[1]);
     const minMaxString = `${minString} ${maxString}`;
