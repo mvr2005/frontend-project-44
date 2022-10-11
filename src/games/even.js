@@ -1,9 +1,14 @@
 import { startGame, numberRound } from '../index.js';
 import generateRandomNumber from '../generate-random-number.js';
 
+const isEven = (number) => {
+  const value = (number % 2) === 0;
+  return value;
+};
+
 const parityCheck = (actualValue) => {
   let value = '';
-  if (actualValue % 2 === 0) {
+  if (isEven(actualValue) === true) {
     value = 'yes';
   } else {
     value = 'no';

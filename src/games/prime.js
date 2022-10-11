@@ -1,13 +1,21 @@
 import { startGame, numberRound } from '../index.js';
 import generateRandomNumber from '../generate-random-number.js';
 
-const primeNumberCheck = (actualValue) => {
-  let value = 'yes';
-  for (let i = 2; i < actualValue; i += 1) {
-    if (actualValue % i === 0) {
-      value = 'no';
+const isPrime = (number) => {
+  let value = false;
+  for (let i = 2; i < number; i += 1) {
+    value = (number % i) === 0;
+    if (value === true) {
       break;
     }
+  }
+  return value;
+};
+
+const primeNumberCheck = (actualValue) => {
+  let value = 'yes';
+  if (isPrime(actualValue) === true) {
+    value = 'no';
   }
   return value;
 };
