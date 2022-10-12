@@ -6,9 +6,8 @@ const progressionString = (arr) => {
   return progressionStrings;
 };
 
-const progression = () => {
-  const stepProgession = generateRandomNumber(1, 20);
-  const arrProgression = [generateRandomNumber(1, 20)];
+const progression = (stepProgession, startProgession) => {
+  const arrProgression = [startProgession];
   for (let j = 0; j < 9; j += 1) {
     arrProgression.push(arrProgression[j] + stepProgession);
   }
@@ -20,7 +19,7 @@ const implementationGame = () => {
   let digit = 0;
   for (let i = 0; i < numberRound; i += 1) {
     const passPlace = generateRandomNumber(1, 10);
-    const arrProgression = progression();
+    const arrProgression = progression(generateRandomNumber(1, 20), generateRandomNumber(1, 20));
     digit = String(arrProgression[passPlace]);
     arrProgression[passPlace] = '..';
     arrayTaskSolution[i] = [progressionString(arrProgression).trim(), digit];
