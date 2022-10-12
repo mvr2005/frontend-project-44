@@ -22,6 +22,11 @@ const implementationGame = () => {
   let divisor = 0;
   for (let i = 0; i < numberRound; i += 1) {
     const arrMinMax = calcMinMax(generateRandomNumber(1, 100), generateRandomNumber(1, 100));
+    /* Использование массива показалось наиболее удобным.
+      Метод calcMinMax возвращает отсортированный массив и 
+      для вычисления максимального делителя в функции я тоже использую
+      аргументом массив. Можно все сделать на переменных, но мне показалось
+      сложнее. Написал код с переменными в файле gcd-variant.js */
     divisor = calcDivisor(arrMinMax);
     const minString = String(arrMinMax[0]);
     const maxString = String(arrMinMax[1]);
