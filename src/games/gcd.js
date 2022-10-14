@@ -17,7 +17,7 @@ const calcDivisor = (arrMinMax) => {
   return divisor;
 };
 
-const implementationGame = () => {
+const gamesRounds = () => {
   const arrayTaskSolution = [];
   let divisor = 0;
   for (let i = 0; i < numberRound; i += 1) {
@@ -38,7 +38,7 @@ const implementationGame = () => {
 
 const startGameGcd = () => {
   const textTask = 'Find the greatest common divisor of given numbers.';
-  const arrayTaskSolution = implementationGame();
+  const arrayTaskSolution = gamesRounds();
   startGame(textTask, arrayTaskSolution);
 };
 

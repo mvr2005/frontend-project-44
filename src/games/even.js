@@ -16,7 +16,7 @@ const parityCheck = (actualValue) => {
   return value;
 };
 
-const implementationGame = () => {
+const gamesRounds = () => {
   const arrayTaskSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const actualValue = generateRandomNumber(1, 100);
@@ -28,7 +28,7 @@ const implementationGame = () => {
 
 const startGameEven = () => {
   const TextTask = 'Answer "yes" if the number is even, otherwise answer "no".';
-  const arrayTaskSolution = implementationGame();
+  const arrayTaskSolution = gamesRounds();
   startGame(TextTask, arrayTaskSolution);
 };
 

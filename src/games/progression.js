@@ -14,7 +14,7 @@ const progression = (stepProgession, startProgession) => {
   return arrProgression;
 };
 
-const implementationGame = () => {
+const gamesRounds = () => {
   const arrayTaskSolution = [];
   let digit = 0;
   for (let i = 0; i < numberRound; i += 1) {
@@ -29,7 +29,7 @@ const implementationGame = () => {
 
 const startGameProgression = () => {
   const textTask = 'What number is missing in the progression?';
-  const arrayTaskSolution = implementationGame();
+  const arrayTaskSolution = gamesRounds();
   startGame(textTask, arrayTaskSolution);
 };
 

@@ -3,7 +3,7 @@ import generateRandomNumber from '../generate-random-number.js';
 
 const selectOperation = () => {
   const operators = ['+', '-', '*'];
-  const randomOperator = operators[generateRandomNumber(0, 3)];
+  const randomOperator = operators[generateRandomNumber(0, operators.length - 1)];
   return randomOperator;
 };
 
@@ -22,7 +22,7 @@ const calculation = (digit1, digit2, operation) => {
   }
 };
 
-const implementationGame = () => {
+const gamesRounds = () => {
   const arrayTaskSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const digit1 = generateRandomNumber(1, 100);
@@ -37,7 +37,7 @@ const implementationGame = () => {
 
 const startGameCalc = () => {
   const textTask = 'What is the result of the expression?';
-  const arrayTaskSolution = implementationGame();
+  const arrayTaskSolution = gamesRounds();
   startGame(textTask, arrayTaskSolution);
 };
 

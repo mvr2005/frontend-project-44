@@ -32,12 +32,12 @@ brain-progression
 ```
 
 <h2>brain-even</h2>
-<a href="https://asciinema.org/a/5GHlok7Cqd9W6IwWrlABqA6F8" target="_blank"><img src="https://asciinema.org/a/5GHlok7Cqd9W6IwWrlABqA6F8.svg" /></a>
+<a href="https://asciinema.org/a/rQ0mAhV5Sf3fk8beD5kqVTBiS" target="_blank"><img src="https://asciinema.org/a/rQ0mAhV5Sf3fk8beD5kqVTBiS.svg" /></a>
 <h2>brain-calc</h2>
-<a href="https://asciinema.org/a/2234aeJdYljA1Xfi1p8or4L0A" target="_blank"><img src="https://asciinema.org/a/2234aeJdYljA1Xfi1p8or4L0A.svg" /></a>
+<a href="https://asciinema.org/a/4gPmGwhuKy6ycskBCmjoPf866" target="_blank"><img src="https://asciinema.org/a/4gPmGwhuKy6ycskBCmjoPf866.svg" /></a>
 <h2>brain-gcd</h2>
-<a href="https://asciinema.org/a/e64kJmoz5PRndCTsH3GAvryMt" target="_blank"><img src="https://asciinema.org/a/e64kJmoz5PRndCTsH3GAvryMt.svg" /></a>
+<a href="https://asciinema.org/a/ZssmFgCnKUroRbTzoEJ7K7gGJ" target="_blank"><img src="https://asciinema.org/a/ZssmFgCnKUroRbTzoEJ7K7gGJ.svg" /></a>
 <h2>brain-progression</h2>
-<a href="https://asciinema.org/a/mBqCEt1qVf4DLM5qSYLRTeG0S" target="_blank"><img src="https://asciinema.org/a/mBqCEt1qVf4DLM5qSYLRTeG0S.svg" /></a>
+<a href="https://asciinema.org/a/DVR5GLXTyCrr5S8YgHCwei7zk" target="_blank"><img src="https://asciinema.org/a/DVR5GLXTyCrr5S8YgHCwei7zk.svg" /></a>
 <h2>brain-prime</h2>
-<a href="https://asciinema.org/a/okXiZCajmscr7ffn75qfQ0071" target="_blank"><img src="https://asciinema.org/a/okXiZCajmscr7ffn75qfQ0071.svg" /></a>
+<a href="https://asciinema.org/a/C5OUcGIlETBnciSzol1Old6Wf" target="_blank"><img src="https://asciinema.org/a/C5OUcGIlETBnciSzol1Old6Wf.svg" /></a>

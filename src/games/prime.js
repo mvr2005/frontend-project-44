@@ -20,7 +20,7 @@ const primeNumberCheck = (actualValue) => {
   return value;
 };
 
-const implementationGame = () => {
+const gamesRounds = () => {
   const arrayTaskSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const actualValue = generateRandomNumber(2, 100);
@@ -32,7 +32,7 @@ const implementationGame = () => {
 
 const startGamePrime = () => {
   const textTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const arrayTaskSolution = implementationGame();
+  const arrayTaskSolution = gamesRounds();
   startGame(textTask, arrayTaskSolution);
 };
 
