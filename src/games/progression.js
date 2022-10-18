@@ -15,16 +15,16 @@ const progression = (stepProgession, startProgession) => {
 };
 
 const gamesRounds = () => {
-  const arrayTaskSolution = [];
+  const taskAndSolution = [];
   let digit = 0;
   for (let i = 0; i < numberRound; i += 1) {
     const passPlace = generateRandomNumber(1, 10);
     const arrProgression = progression(generateRandomNumber(1, 20), generateRandomNumber(1, 20));
     digit = String(arrProgression[passPlace]);
     arrProgression[passPlace] = '..';
-    arrayTaskSolution[i] = [progressionString(arrProgression).trim(), digit];
+    taskAndSolution[i] = [progressionString(arrProgression).trim(), digit];
   }
-  return arrayTaskSolution;
+  return taskAndSolution;
 };
 
 const startGameProgression = () => {

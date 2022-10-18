@@ -18,7 +18,7 @@ const calcDivisor = (numberMin, numberMax) => {
 };
 
 const gamesRounds = () => {
-  const arrayTaskSolution = [];
+  const taskAndSolution = [];
   let divisor = 0;
   for (let i = 0; i < numberRound; i += 1) {
     const number1 = generateRandomNumber(1, 100);
@@ -29,9 +29,9 @@ const gamesRounds = () => {
     const minString = String(numberMin);
     const maxString = String(numberMax);
     const minMaxString = `${minString} ${maxString}`;
-    arrayTaskSolution[i] = [minMaxString, String(divisor)];
+    taskAndSolution[i] = [minMaxString, String(divisor)];
   }
-  return arrayTaskSolution;
+  return taskAndSolution;
 };
 
 const startGameGcd = () => {

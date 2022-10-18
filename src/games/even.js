@@ -17,13 +17,13 @@ const parityCheck = (actualValue) => {
 };
 
 const gamesRounds = () => {
-  const arrayTaskSolution = [];
+  const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const actualValue = generateRandomNumber(1, 100);
     const value = parityCheck(actualValue);
-    arrayTaskSolution[i] = [actualValue, value];
+    taskAndSolution[i] = [actualValue, value];
   }
-  return arrayTaskSolution;
+  return taskAndSolution;
 };
 
 const startGameEven = () => {

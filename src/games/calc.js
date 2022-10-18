@@ -23,16 +23,16 @@ const calculation = (digit1, digit2, operation) => {
 };
 
 const gamesRounds = () => {
-  const arrayTaskSolution = [];
+  const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const digit1 = generateRandomNumber(1, 100);
     const digit2 = generateRandomNumber(1, 100);
     const operation = selectOperation();
     const actualValue = `${digit1} ${operation} ${digit2}`;
     const result = calculation(digit1, digit2, operation);
-    arrayTaskSolution[i] = [actualValue, String(result)];
+    taskAndSolution[i] = [actualValue, String(result)];
   }
-  return arrayTaskSolution;
+  return taskAndSolution;
 };
 
 const startGameCalc = () => {

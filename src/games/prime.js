@@ -21,13 +21,13 @@ const primeNumberCheck = (actualValue) => {
 };
 
 const gamesRounds = () => {
-  const arrayTaskSolution = [];
+  const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const actualValue = generateRandomNumber(2, 100);
     const value = primeNumberCheck(actualValue);
-    arrayTaskSolution[i] = [actualValue, value];
+    taskAndSolution[i] = [actualValue, value];
   }
-  return arrayTaskSolution;
+  return taskAndSolution;
 };
 
 const startGamePrime = () => {
