@@ -3,14 +3,9 @@ import generateRandomNumber from '../generate-random-number.js';
 
 const isEven = (number) => (number % 2) === 0;
 
-const parityCheck = (actualValue) => {
-  let value = '';
-  if (isEven(actualValue) === true) {
-    value = 'yes';
-  } else {
-    value = 'no';
-  }
-  return value;
+const parityCheck = (number) => {
+  const answer = isEven(number) ? 'yes' : 'no';
+  return answer;
 };
 
 const gamesRounds = () => {
