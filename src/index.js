@@ -1,16 +1,11 @@
 import readlineSync from 'readline-sync';
-import askQuestion from './cli.js';
-
-export const startGames = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = askQuestion();
-  return name;
-};
 
 export const numberRound = 3;
 
 export const startGame = (textTask, arrayTaskSolution) => {
-  const name = startGames();
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name?: ');
+  console.log(`${'Hello, '}${name}${'!'}`);
   console.log(textTask);
   for (let i = 0; i < numberRound; i += 1) {
     const task = arrayTaskSolution[i][0];

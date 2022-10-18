@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { startGames } from '../src/index.js';
+import askQuestion from '../src/cli.js';
 
-startGames();
+askQuestion();
