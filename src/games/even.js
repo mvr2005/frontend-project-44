@@ -1,10 +1,7 @@
 import { startGame, numberRound } from '../index.js';
 import generateRandomNumber from '../generate-random-number.js';
 
-const isEven = (number) => {
-  const value = (number % 2) === 0;
-  return value;
-};
+const isEven = (number) => (number % 2) === 0;
 
 const parityCheck = (actualValue) => {
   let value = '';

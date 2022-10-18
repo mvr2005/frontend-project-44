@@ -7,8 +7,9 @@ const progressionString = (arr) => {
 };
 
 const progression = (stepProgession, startProgession) => {
+  const lengthProgression = 9;
   const arrProgression = [startProgession];
-  for (let j = 0; j < 9; j += 1) {
+  for (let j = 0; j < lengthProgression; j += 1) {
     arrProgression.push(arrProgression[j] + stepProgession);
   }
   return arrProgression;
