@@ -1,9 +1,11 @@
 import { startGame, numberRound } from '../index.js';
 import generateRandomNumber from '../generate-random-number.js';
 
+const minPrimeNumber = 2;
+
 const isPrime = (number) => {
   let value = false;
-  for (let i = 2; i < number; i += 1) {
+  for (let i = minPrimeNumber; i < number; i += 1) {
     value = (number % i) === 0;
     if (value === true) {
       break;
@@ -13,17 +15,14 @@ const isPrime = (number) => {
 };
 
 const primeNumberCheck = (actualValue) => {
-  let value = 'yes';
-  if (isPrime(actualValue) === true) {
-    value = 'no';
-  }
-  return value;
+  const answer = isPrime(actualValue) ? 'no' : 'yes';
+  return answer;
 };
 
 const gamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
-    const actualValue = generateRandomNumber(2, 100);
+    const actualValue = generateRandomNumber(minPrimeNumber, 100);
     const value = primeNumberCheck(actualValue);
     taskAndSolution[i] = [actualValue, value];
   }

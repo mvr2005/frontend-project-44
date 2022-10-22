@@ -8,22 +8,21 @@ const progressionString = (arr) => {
 
 const progression = (stepProgession, startProgession) => {
   const lengthProgression = 9;
-  const arrProgression = [startProgession];
+  const Progression = [startProgession];
   for (let j = 0; j < lengthProgression; j += 1) {
-    arrProgression.push(arrProgression[j] + stepProgession);
+    Progression.push(Progression[j] + stepProgession);
   }
-  return arrProgression;
+  return Progression;
 };
 
 const gamesRounds = () => {
   const taskAndSolution = [];
-  let digit = 0;
   for (let i = 0; i < numberRound; i += 1) {
     const passPlace = generateRandomNumber(1, 10);
-    const arrProgression = progression(generateRandomNumber(1, 20), generateRandomNumber(1, 20));
-    digit = String(arrProgression[passPlace]);
-    arrProgression[passPlace] = '..';
-    taskAndSolution[i] = [progressionString(arrProgression).trim(), digit];
+    const Progression = progression(generateRandomNumber(1, 20), generateRandomNumber(1, 20));
+    const digit = String(Progression[passPlace]);
+    Progression[passPlace] = '..';
+    taskAndSolution[i] = [progressionString(Progression).trim(), digit];
   }
   return taskAndSolution;
 };
