@@ -12,13 +12,11 @@ export const startGame = (textTask, taskAndSolution) => {
     const currentValue = readlineSync.question(`Question: ${task}\nYour answer: `);
     if (currentValue === answer) {
       console.log('Correct!');
-      if (i === numberRound - 1) {
-        console.log(`Congratulations, ${name}!`);
-      }
     } else {
       console.log(`'${currentValue}'is wrong answer ;(. Correct answer was '${answer}'.`);
       console.log(`Let's try again, ${name}!`);
-      break;
+      return;
     }
+    console.log(`Congratulations, ${name}!`);
   }
 };
