@@ -30,8 +30,8 @@ const gamesRounds = () => {
 
 const startGameProgression = () => {
   const textTask = 'What number is missing in the progression?';
-  const arrayTaskSolution = gamesRounds();
-  startGame(textTask, arrayTaskSolution);
+  const taskAndSolution = gamesRounds();
+  startGame(textTask, taskAndSolution);
 };
 
 export default startGameProgression;

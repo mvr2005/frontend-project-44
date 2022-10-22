@@ -20,8 +20,8 @@ const gamesRounds = () => {
 
 const startGameEven = () => {
   const TextTask = 'Answer "yes" if the number is even, otherwise answer "no".';
-  const arrayTaskSolution = gamesRounds();
-  startGame(TextTask, arrayTaskSolution);
+  const taskAndSolution = gamesRounds();
+  startGame(TextTask, taskAndSolution);
 };
 
 export default startGameEven;
