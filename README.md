@@ -32,9 +32,9 @@ brain-progression
 ```
 
 <h2>brain-even</h2>
-<a href="https://asciinema.org/a/rQ0mAhV5Sf3fk8beD5kqVTBiS" target="_blank"><img src="https://asciinema.org/a/rQ0mAhV5Sf3fk8beD5kqVTBiS.svg" /></a>
+<a href="https://asciinema.org/a/zOrCuuy5w736DRrBPGdZS0hjS" target="_blank"><img src="https://asciinema.org/a/zOrCuuy5w736DRrBPGdZS0hjS.svg" /></a>
 <h2>brain-calc</h2>
-<a href="https://asciinema.org/a/4gPmGwhuKy6ycskBCmjoPf866" target="_blank"><img src="https://asciinema.org/a/4gPmGwhuKy6ycskBCmjoPf866.svg" /></a>
+<a href="https://asciinema.org/a/tmozOeJJ4prc1NLZ11j81aisD" target="_blank"><img src="https://asciinema.org/a/tmozOeJJ4prc1NLZ11j81aisD.svg" /></a>
 <h2>brain-gcd</h2>
 <a href="https://asciinema.org/a/ZssmFgCnKUroRbTzoEJ7K7gGJ" target="_blank"><img src="https://asciinema.org/a/ZssmFgCnKUroRbTzoEJ7K7gGJ.svg" /></a>
 <h2>brain-progression</h2>
