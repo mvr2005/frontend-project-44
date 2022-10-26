@@ -4,14 +4,12 @@ import generateRandomNumber from '../generate-random-number.js';
 const minPrimeNumber = 2;
 
 const isPrime = (number) => {
-  let value = false;
   for (let i = minPrimeNumber; i < number; i += 1) {
-    value = (number % i) === 0;
-    if (value === true) {
-      break;
+    if ((number % i) === 0) {
+      return true;
     }
   }
-  return value;
+  return false;
 };
 
 const gamesRounds = () => {
