@@ -3,17 +3,12 @@ import generateRandomNumber from '../generate-random-number.js';
 
 const isEven = (number) => (number % 2) === 0;
 
-const parityCheck = (number) => {
-  const answer = isEven(number) ? 'yes' : 'no';
-  return answer;
-};
-
 const gamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
-    const actualValue = generateRandomNumber(1, 100);
-    const value = parityCheck(actualValue);
-    taskAndSolution[i] = [actualValue, value];
+    const number = generateRandomNumber(1, 100);
+    const answer = isEven(number) ? 'yes' : 'no';
+    taskAndSolution[i] = [number, answer];
   }
   return taskAndSolution;
 };
