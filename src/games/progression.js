@@ -6,23 +6,24 @@ const progressionString = (arr) => {
   return progressionStrings;
 };
 
-const progression = (stepProgession, startProgession) => {
-  const lengthProgression = 9;
-  const Progression = [startProgession];
+const lengthProgression = 9;
+
+const generateProgression = (stepProgession, startProgession) => { 
+  const progression = [startProgession];
   for (let j = 0; j < lengthProgression; j += 1) {
-    Progression.push(Progression[j] + stepProgession);
+    progression.push(progression[j] + stepProgession);
   }
-  return Progression;
+  return progression;
 };
 
 const gamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
-    const passPlace = generateRandomNumber(1, 10);
-    const Progression = progression(generateRandomNumber(1, 20), generateRandomNumber(1, 20));
-    const digit = String(Progression[passPlace]);
-    Progression[passPlace] = '..';
-    taskAndSolution[i] = [progressionString(Progression).trim(), digit];
+    const passPlace = generateRandomNumber(1, lengthProgression + 1);
+    const progression = generateProgression(generateRandomNumber(1, 20), generateRandomNumber(1, 20));
+    const digit = String(progression[passPlace]);
+    progression[passPlace] = '..';
+    taskAndSolution[i] = [progressionString(progression).trim(), digit];
   }
   return taskAndSolution;
 };
