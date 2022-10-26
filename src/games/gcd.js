@@ -4,14 +4,12 @@ import generateRandomNumber from '../generate-random-number.js';
 const calcDivisor = (number1, number2) => {
   const numberMin = Math.min(number1, number2);
   const numberMax = Math.max(number1, number2);
-  let divisor = 1;
   for (let i = numberMin; i > 1; i -= 1) {
     if ((numberMin % i) === 0 && (numberMax % i) === 0) {
-      divisor = i;
-      break;
+      return i;
     }
   }
-  return divisor;
+  return 1;
 };
 
 const gamesRounds = () => {

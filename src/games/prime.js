@@ -14,17 +14,12 @@ const isPrime = (number) => {
   return value;
 };
 
-const primeNumberCheck = (actualValue) => {
-  const answer = isPrime(actualValue) ? 'no' : 'yes';
-  return answer;
-};
-
 const gamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
-    const actualValue = generateRandomNumber(minPrimeNumber, 100);
-    const value = primeNumberCheck(actualValue);
-    taskAndSolution[i] = [actualValue, value];
+    const number = generateRandomNumber(minPrimeNumber, 100);
+    const ansver = isPrime(number) ? 'no' : 'yes';
+    taskAndSolution[i] = [number, ansver];
   }
   return taskAndSolution;
 };
