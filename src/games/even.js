@@ -21,6 +21,7 @@ const gamesRounds = () => {
 const startGameEven = () => {
   const TextTask = 'Answer "yes" if the number is even, otherwise answer "no".';
   const taskAndSolution = gamesRounds();
+
   startGame(TextTask, taskAndSolution);
 };
 

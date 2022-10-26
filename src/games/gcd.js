@@ -29,6 +29,7 @@ const gamesRounds = () => {
 const startGameGcd = () => {
   const textTask = 'Find the greatest common divisor of given numbers.';
   const taskAndSolution = gamesRounds();
+
   startGame(textTask, taskAndSolution);
 };
 

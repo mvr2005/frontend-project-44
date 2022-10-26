@@ -32,6 +32,7 @@ const gamesRounds = () => {
 const startGamePrime = () => {
   const textTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const taskAndSolution = gamesRounds();
+
   startGame(textTask, taskAndSolution);
 };
 

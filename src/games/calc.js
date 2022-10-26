@@ -36,6 +36,7 @@ const gamesRounds = () => {
 const startGameCalc = () => {
   const textTask = 'What is the result of the expression?';
   const taskAndSolution = gamesRounds();
+
   startGame(textTask, taskAndSolution);
 };
 
