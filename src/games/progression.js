@@ -17,10 +17,10 @@ const gamesRounds = () => {
     const passPlace = generateRandomNumber(1, lengthProgression + 1);
     let progression = [];
     progression = generateProgression(generateRandomNumber(1, 20), generateRandomNumber(1, 20));
-    const digit = String(progression[passPlace]);
+    const number = String(progression[passPlace]);
     progression[passPlace] = '..';
-    progression.join(' ');
-    taskAndSolution[i] = [progression.trim(), digit];
+    progression = progression.join(' ');
+    taskAndSolution[i] = [progression.trim(), number];
   }
   return taskAndSolution;
 };
