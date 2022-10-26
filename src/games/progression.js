@@ -1,14 +1,9 @@
 import { startGame, numberRound } from '../index.js';
 import generateRandomNumber from '../generate-random-number.js';
 
-const progressionString = (arr) => {
-  const progressionStrings = arr.join(' ');
-  return progressionStrings;
-};
-
 const lengthProgression = 9;
 
-const generateProgression = (stepProgession, startProgession) => { 
+const generateProgression = (stepProgession, startProgession) => {
   const progression = [startProgession];
   for (let j = 0; j < lengthProgression; j += 1) {
     progression.push(progression[j] + stepProgession);
@@ -20,10 +15,12 @@ const gamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const passPlace = generateRandomNumber(1, lengthProgression + 1);
-    const progression = generateProgression(generateRandomNumber(1, 20), generateRandomNumber(1, 20));
+    let progression = [];
+    progression = generateProgression(generateRandomNumber(1, 20), generateRandomNumber(1, 20));
     const digit = String(progression[passPlace]);
     progression[passPlace] = '..';
-    taskAndSolution[i] = [progressionString(progression).trim(), digit];
+    progression.join(' ');
+    taskAndSolution[i] = [progression.trim(), digit];
   }
   return taskAndSolution;
 };
