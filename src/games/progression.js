@@ -17,7 +17,7 @@ const gamesRounds = () => {
     const passPlace = generateRandomNumber(1, lengthProgression + 1);
     let progression = [];
     /* Ругался линтер за длинную строку, придумал только такой выход */
-    progression = generateProgression(generateRandomNumber(1, 20), generateRandomNumber(1, 20));
+    progression = generateProgression(generateRandomNumber(1, 19), generateRandomNumber(1, 19));
     const number = String(progression[passPlace]);
     progression[passPlace] = '..';
     progression = progression.join(' ');
