@@ -6,17 +6,17 @@ const minPrimeNumber = 2;
 const isPrime = (number) => {
   for (let i = minPrimeNumber; i < number; i += 1) {
     if ((number % i) === 0) {
-      return true;
+      return true; /* Пробовал, выдает вроде проавильно */
     }
   }
-  return false;
+  return false; /* У меня false это получилось простое число */
 };
 
 const gamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const number = generateRandomNumber(minPrimeNumber, 100);
-    const ansver = isPrime(number) ? 'no' : 'yes';
+    const ansver = isPrime(number) ? 'no' : 'yes'; /* Вот тут */
     taskAndSolution[i] = [number, ansver];
   }
   return taskAndSolution;
