@@ -14,7 +14,7 @@ const generateProgression = (stepProgession, startProgession) => {
 const gamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
-    const passPlace = generateRandomNumber(1, lengthProgression + 1);
+    const passPlace = generateRandomNumber(1, lengthProgression);
     let progression = [];
     /* Ругался линтер за длинную строку, придумал только такой выход */
     progression = generateProgression(generateRandomNumber(1, 19), generateRandomNumber(1, 19));
