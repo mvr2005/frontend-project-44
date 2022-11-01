@@ -16,7 +16,7 @@ const calculation = (digit1, digit2, operation) => {
   }
 };
 
-const gamesRounds = () => {
+const createGamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const digit1 = generateRandomNumber(1, 100);
@@ -32,7 +32,7 @@ const gamesRounds = () => {
 
 const startGameCalc = () => {
   const textTask = 'What is the result of the expression?';
-  const taskAndSolution = gamesRounds();
+  const taskAndSolution = createGamesRounds();
 
   startGame(textTask, taskAndSolution);
 };

@@ -11,24 +11,24 @@ const generateProgression = (stepProgession, startProgession) => {
   return progression;
 };
 
-const gamesRounds = () => {
+const createGamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const passPlace = generateRandomNumber(1, lengthProgression);
-    let progression = [];
-    /* Ругался линтер за длинную строку, придумал только такой выход */
-    progression = generateProgression(generateRandomNumber(1, 19), generateRandomNumber(1, 19));
+    const number1 = generateRandomNumber(1, 19);
+    const number2 = generateRandomNumber(1, 19);
+    let progression = generateProgression(number1, number2);
     const number = String(progression[passPlace]);
     progression[passPlace] = '..';
     progression = progression.join(' ');
-    taskAndSolution[i] = [progression.trim(), number];
+    taskAndSolution[i] = [progression, number];
   }
   return taskAndSolution;
 };
 
 const startGameProgression = () => {
   const textTask = 'What number is missing in the progression?';
-  const taskAndSolution = gamesRounds();
+  const taskAndSolution = createGamesRounds();
 
   startGame(textTask, taskAndSolution);
 };

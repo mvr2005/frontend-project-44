@@ -12,7 +12,7 @@ const isPrime = (number) => {
   return false; /* У меня false это получилось простое число */
 };
 
-const gamesRounds = () => {
+const createGamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const number = generateRandomNumber(minPrimeNumber, 100);
@@ -24,7 +24,7 @@ const gamesRounds = () => {
 
 const startGamePrime = () => {
   const textTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const taskAndSolution = gamesRounds();
+  const taskAndSolution = createGamesRounds();
 
   startGame(textTask, taskAndSolution);
 };

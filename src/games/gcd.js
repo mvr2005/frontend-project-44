@@ -12,7 +12,7 @@ const calcDivisor = (number1, number2) => {
   return 1;
 };
 
-const gamesRounds = () => {
+const createGamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const number1 = generateRandomNumber(1, 100);
@@ -26,7 +26,7 @@ const gamesRounds = () => {
 
 const startGameGcd = () => {
   const textTask = 'Find the greatest common divisor of given numbers.';
-  const taskAndSolution = gamesRounds();
+  const taskAndSolution = createGamesRounds();
 
   startGame(textTask, taskAndSolution);
 };

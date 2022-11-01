@@ -3,7 +3,7 @@ import generateRandomNumber from '../generate-random-number.js';
 
 const isEven = (number) => (number % 2) === 0;
 
-const gamesRounds = () => {
+const createGamesRounds = () => {
   const taskAndSolution = [];
   for (let i = 0; i < numberRound; i += 1) {
     const number = generateRandomNumber(1, 100);
@@ -15,7 +15,7 @@ const gamesRounds = () => {
 
 const startGameEven = () => {
   const textTask = 'Answer "yes" if the number is even, otherwise answer "no".';
-  const taskAndSolution = gamesRounds();
+  const taskAndSolution = createGamesRounds();
 
   startGame(textTask, taskAndSolution);
 };
